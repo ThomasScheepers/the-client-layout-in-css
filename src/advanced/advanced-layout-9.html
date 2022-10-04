@@ -7,32 +7,37 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       body {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-          grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
-
-        }
-
-        header {
-          grid-area: header;
-        }
-
-        nav {
-          grid-area: nav;
-        }
-
-        main {
-          grid-area: main;
-        }
-
-        footer {
-          grid-area: footer;
-        }
+        position: relative;
+        display: grid;
+      }
+      header {
+        position: absolute;
+        width: 20%;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        z-index: 10;
+      }
+      nav {
+        position: absolute;
+        top: -1rem;
+        right: 0;
+        z-index: 0;
+        border-radius: 50%;
+        aspect-ratio: 1;
+      }
+      footer {
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        z-index: 10;
+      }
+      main {
+        border-radius: 50%;
+        aspect-ratio: 1;
+        z-index: 5;
+      }
     </style>
   </head>
   <body id="advanced-layout-9">
