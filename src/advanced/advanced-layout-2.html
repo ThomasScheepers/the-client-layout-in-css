@@ -9,26 +9,25 @@
       body {
           display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+          grid-template-rows: 2fr 1fr 2fr 1fr 1fr;
           grid-template-areas:
           "header"
           "nav"
           "."
           "main"
           "footer";
-
         }
 
         header {
           grid-area: header;
           transform: rotate(-30deg);
-          grid-row: 1;
+          grid-row: 2;
         }
 
         nav {
           grid-area: nav;
           transform: rotate(30deg);
-          grid-row: 1;
+          grid-row: 2;
         }
 
         main {
