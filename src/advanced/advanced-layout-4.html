@@ -6,7 +6,40 @@
     <title>Advanced Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 8fr 1fr 55px 1fr 55px 8fr;
+          grid-template-areas:
+          "nav header"
+          "nav header"
+          "nav ."
+          ". footer"
+          "main footer"
+          "main footer";
+        }
+
+        header {
+          grid-area: header;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+        }
+
+        nav {
+          grid-area: nav;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+        }
+
+        main {
+          grid-area: main;
+          clip-path: polygon(0% 14%, 100% 0%, 100% 100%, 0% 100%);
+          grid-row: 3 / 7;
+        }
+
+        footer {
+          grid-area: footer;
+          clip-path: polygon(0% 11%, 100% 0%, 100% 100%, 0% 100%);
+          grid-row: 2 / 7;
+        }
     </style>
   </head>
   <body id="advanced-layout-4">

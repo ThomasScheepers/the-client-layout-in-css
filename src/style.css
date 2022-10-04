@@ -8,6 +8,8 @@ body {
   gap: 0.5em;
   min-height: 100vh;
   font-family: sans-serif;
+  max-width: 60%;
+  margin-left: 20%;
 }
 body > * {
   min-height: 1em;
